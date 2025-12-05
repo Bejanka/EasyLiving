@@ -1,0 +1,20 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Example: Click event on product images
+    const productImages = document.querySelectorAll('.product img');
+    productImages.forEach(function(img) {
+        img.addEventListener('click', function() {
+            alert('You clicked on a product image!');
+            // You can add more functionality here, like displaying more details.
+        });
+    });
+
+    // Example: Dynamic content update
+    const loadMoreButton = document.getElementById('load-more');
+    if (loadMoreButton) {
+        loadMoreButton.addEventListener('click', function() {
+            // Example: Load more products
+            alert('Loading more products...');
+            // You can fetch and display more products here.
+        });
+    }
+});
